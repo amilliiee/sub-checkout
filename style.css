@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --eerie-black: #121826;
+    --saurus: #6C727F;
+    --light-silver: #D2D5DA;
+    --blurple: #743EE4;
+    --lavender: #ECE9FC;
+    --anti-flash: #F0F3F6;
+
+    --24px: 1.5rem;
+    --20px: 1.25rem;
+    --16px: 1rem;
+    --14px: 0.875rem;
+    --12px: 0.75rem;
+
+    --semibold: 600;
+    --medium: 500;
+    --regular: 400;
+    --light: 300;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.01rem;
+    color: var(--saurus);
+}
+
+.body-wrapper {
+    margin: 0 20px 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.checkout-form {
+    width: 100%;
+    min-width: 644px;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 40px 72px;
+    gap: 32px;
+}
+
+.checkout-blurb {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.checkout-blurb img {
+    margin-bottom: 16px;
+}
+
+.checkout-blurb h2 {
+    margin-bottom: 12px;
+    color: var(--eerie-black);
+    font-weight: var(--semibold);
+}
+
+.checkout-blurb p {
+    font-size: var(--14px);
+}
+
+.checkout-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-size: var(--14px);
+    font-weight: var(--semibold);
+    margin-bottom: 12px;
+}
+
+input, select {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid var(--light-silver);
+    border-radius: 12px;
+    color: var(--eerie-black);
+    font-family: 'Inter', sans-serif;
+    font-weight: var(--regular);
+    font-size: var(--16px);
+}
+
+button {
+    padding: 16px;
+    border-radius: 12px;
+    color: var(--eerie-black);
+    font-family: 'Inter', sans-serif;
+    font-weight: var(--medium);
+    font-size: var(--16px);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.pay-options {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.pay-btn {
+    width: 33%;
+    height: 84px;
+    border: 1px solid var(--light-silver);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    line-height: 150%;
+}
+
+.pay-btn:focus {
+    border: 1px solid var(--blurple);
+    background-color: var(--lavender);
+}
+
+.location {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.country, .zip {
+    width: 50%;
+}
+
+.country select {
+    appearance: none;
+    background: url('./img/left arrow.svg') no-repeat right 16px center;
+}
+
+.sub {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    width: 100%;
+}
+
+.sub button {
+    border: 1px solid transparent;
+    font-weight: var(--semibold);
+}
+
+#cancel {
+    width: 100%;
+    max-width: 101px;
+    color: var(--eerie-black);
+    background-color: var(--anti-flash);
+}
+
+#subscribe {
+    width: 100%;
+    max-width: 459px;
+    color: white;
+    background-color: var(--blurple);
+}
+
+.plan-select {
+    margin-top: 20px;
+    padding: 32px;
+    width: 100%;
+    min-width: 360px;
+    max-width: 520px;
+    border: 1px solid var(--anti-flash);
+    border-radius: 12px;
+    background: url('./img/Checkout-background.png') bottom right no-repeat;
+    background-color: var(--anti-flash);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.plans {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#starter {
+    font-size: var(--16px);
+    margin-bottom: 0;
+}
+
+.monthly, .annual {
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    border: 1px solid var(--lavender);
+    border-radius: 12px;
+    background-color: white;
+}
+
+.monthly input, .annual input {
+    width: 20px;
+}
+
+.month-text, .annual-text {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.month-text span, .annual-text span {
+    color: var(--eerie-black);
+    font-weight: var(--semibold);
+}
+
+.month-text p, .annual-text p {
+    font-size: var(--14px);
+}
+
+#divider {
+    border-top: none;
+    border-color: var(--light-silver);
+}
+
+input[type="radio"]:checked {
+    accent-color: var(--blurple);
+}
+
+.monthly input[type="radio"]:checked, .annual input[type="radio"]:checked {
+    border: 1px solid var(--blurple);
+    background-color: var(--lavender);
+}
+
+.total {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: var(--eerie-black);
+}
+
+.cost {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: var(--20px);
+    font-weight: var(--semibold);
+}
+
+.disclaimer {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.disclaimer img {
+    width: 16px;
+    height: 16px;
+}
+
+.disclaimer p {
+    font-size: var(--12px);
+    font-weight: var(--light);
+    max-width: 500px;
+}
+
+@media (max-width: 1024px) {
+    .body-wrapper {
+        gap: 0;
+    }
+
+    .checkout-form {
+        padding: 40px 49px;
+    }
+
+    .plan-select {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .body-wrapper {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .plan-select {
+        margin: 20px;
+        max-width: 600px;
+        height: 680px;
+    }
+}

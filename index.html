@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subscription Checkout</title>
+  <link href='./style.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="body-wrapper">
+    <!-- customer info -->
+    <div class="checkout-form">
+      <div class="checkout-blurb">
+        <img src="./img/neuralite-logo.svg" alt="Neuralite logo">
+        <h2>Upgrade to Plus</h2>
+        <p>Upgrade today and take your AI-powered productivity to the next level.</p>
+      </div>
+      <div class="checkout-info">
+        <div id="cust-name">
+          <label for="name">Billed to</label>
+          <input type="text" name="name" id="name" placeholder="Enter first & last name">
+        </div>
+        <div id="payment">
+          <label for="pay-options">Payment Details</label>
+          <div class="pay-options">
+            <button class="pay-btn">
+              <img src="./img/Atm Card.svg">
+              <p>Credit Card</p>
+            </button>
+            <button class="pay-btn">
+              <img src="./img/bank.svg">
+              <p>Bank Transfer</p>
+            </button>
+            <button class="pay-btn">
+              <img src="./img/diamond.svg">
+              <p>Points</p>
+            </button>
+          </div>
+        </div>
+        <div class="email">
+          <label for="email">Email Address</label>
+          <input type="text" name="email" placeholder="Enter email address">
+        </div>
+        <div class="location">
+          <div class="country">
+            <label for="country">Country</label>
+            <select name="country">
+              <option value="Finland" selected>Finland</option>
+              <option value="USA">United States</option>
+              <option value="Canada">Canada</option>
+            </select>
+          </div>
+          <div class="zip">
+            <label for="postal">Postal Code</label>
+            <input type="text" name="postal" placeholder="00270">
+          </div>
+        </div>
+        <div class="sub">
+          <button id="cancel">Cancel</button>
+          <button id="subscribe">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <!-- plan selection -->
+    <div class="plan-select">
+      <div class="plans">
+        <label for="option" id="starter">Starter Plan</label>
+        <div class="monthly">
+          <input type="radio" name="option" checked>
+          <div class="month-text">
+            <span>Pay monthly</span>
+            <p>$20/ Month/ Member</p>
+          </div>
+        </div>
+        <div class="annual">
+          <input type="radio" name="option">
+          <div class="annual-text">
+            <span>Pay Annual</span>
+            <p>$16/ Month/ Member</p>
+          </div>
+        </div>
+      </div>
+      <hr id="divider">
+      <div class="total">
+        <div class="cost">
+          <p>Total</p>
+          <p>$20 / Month</p>
+        </div>
+        <class class="disclaimer">
+          <img src="./img/unlock key alt.png">
+          <p>This environment is for demonstration purposes only. Please refrain from entering any actual sensitive data.</p>
+        </class>
+      </div>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
